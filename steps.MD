@@ -3,10 +3,13 @@
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 
-npm i webpack-merge -D
-npm i html-webpack-plugin -D
-npm i typescript ts-loader -D
-npm install style-loader css-loader -D
+npm i -D webpack-merge
+npm i -D html-webpack-plugin
+npm i -D typescript ts-loader
+npm install -D style-loader css-loader
+npm install -D less less-loader file-loader
+npm i -D stylus stylus-loader
+npm install -D extract-text-webpack-plugin@next 不加@next 会报错
 
 npm install --save-dev memory-fs
 
