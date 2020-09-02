@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/css/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -17724,6 +17724,28 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./node_modules/ts-loader/index.js!./src/typescript/calculate.ts":
+/*!**************************************************************!*\
+  !*** ./node_modules/ts-loader!./src/typescript/calculate.ts ***!
+  \**************************************************************/
+/*! exports provided: add, sub */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add", function() { return add; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sub", function() { return sub; });
+function add(a, b) {
+    return a + b;
+}
+function sub(a, b) {
+    return a - b;
+}
+
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -17932,6 +17954,28 @@ module.exports = content.locals || {};
 
 /***/ }),
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _typescript_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typescript/index */ "./src/typescript/index.js");
+/* harmony import */ var _css_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/index */ "./src/css/index.js");
+/* harmony import */ var _js_dom_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js-dom/index */ "./src/js-dom/index.js");
+
+
+
+
+
+
+
+
+/***/ }),
+
 /***/ "./src/js-dom/index.js":
 /*!*****************************!*\
   !*** ./src/js-dom/index.js ***!
@@ -17955,6 +17999,22 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+/***/ }),
+
+/***/ "./src/typescript/index.js":
+/*!*********************************!*\
+  !*** ./src/typescript/index.js ***!
+  \*********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var ts_loader_calculate_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-loader!./calculate.ts */ "./node_modules/ts-loader/index.js!./src/typescript/calculate.ts");
+ // 内联调用ts-loader处理ts源代码
+console.info('1+2=', Object(ts_loader_calculate_ts__WEBPACK_IMPORTED_MODULE_0__["add"])(1, 2))
+console.info('5-1=', Object(ts_loader_calculate_ts__WEBPACK_IMPORTED_MODULE_0__["sub"])(5, 1))
 
 /***/ })
 
