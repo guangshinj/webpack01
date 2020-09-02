@@ -1,5 +1,6 @@
 import _ from 'lodash'; // 第三方工具库
 import { add, sub } from 'ts-loader!./utils/calc.ts' // 内联调用ts-loader处理ts源代码
+import './css/index.css'
 
 console.info('begin')
 function component() {

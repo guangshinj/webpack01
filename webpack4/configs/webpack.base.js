@@ -13,12 +13,12 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        use: [{
-          loader: 'style-loader'
-        }]
-      },
+      // {
+      //   test: /\.vue$/,
+      //   use: [{
+      //     loader: 'style-loader'
+      //   }]
+      // },
       // {
       //   test: /\.js$/,
       //   use: [
@@ -39,9 +39,9 @@ module.exports = {
       // {
       //   test: /\.css$/, use: ['style-loader', 'css-loader']
       // },
-      {
-        test: /\.ts$/, use: ['ts-loader']
-      }
+      // {
+      //   test: /\.ts$/, use: ['ts-loader']
+      // }
     ]
   }
 }

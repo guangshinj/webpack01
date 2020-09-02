@@ -1,8 +1,13 @@
-# 使用 webpack4 用到的包
+# webpack4 用到的包
 
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
-npm install --save-dev css-loader style-loader
+
+npm i webpack-merge -D
+npm i html-webpack-plugin -D
+npm i typescript ts-loader -D
+npm install style-loader css-loader -D
+
 npm install --save-dev memory-fs
 
 ## loader-utils 提供了许多有用的工具，但最常用的一种工具是获取传递给 loader 的选项,schema-utils 包配合 loader-utils，用于保证 loader 选项，进行与 JSON Schema 结构一致的校验
@@ -10,9 +15,6 @@ npm install --save-dev memory-fs
 npm install --save-dev loader-utils schema-utils
 npm install --save-dev jest babel-jest babel-preset-env
 npm install --save @babel/polyfill
-
-npm i webpack-merge -D
-npm i typescript ts-loader -D
 
 # plugins
 
